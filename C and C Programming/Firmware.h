@@ -2,7 +2,7 @@
 #define FIRMWARE_H
 
 /**
- * @file Firmware.h
+ * @file firmware.h
  * @brief this is the file for testing
  * @author Pradip Mahajan
  * @date 09/03/2024

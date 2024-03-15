@@ -1,4 +1,4 @@
-#include "Firmware.h"
+#include "firmware.h"
 
 gsmResp_t SendSync(const char *sendString)
 {

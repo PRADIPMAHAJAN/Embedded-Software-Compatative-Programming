@@ -1,4 +1,4 @@
-#include "Array.h"
+#include "array.h"
 #include <stdio.h>
 
 /// Selection sorting algorithm
@@ -54,7 +54,6 @@ void Merge(int arr[], int l, int mid, int r)
     {
         b[i] = arr[mid+1+i];
     }
-
     int i =0;
     int j =0;
     int k = l;
@@ -80,7 +79,6 @@ void Merge(int arr[], int l, int mid, int r)
         arr[k] = a[i];
         k++, i++;
     }
-
     /// If our j pointer not goes to end
     while(j<n2)
     {
@@ -97,7 +95,6 @@ void MergeSortArray(int arr[], int left, int right)
         int mid = left + (right - left) / 2;      /// Find mid 
         MergeSortArray(arr, left, mid);    /// Pass from start to mid
         MergeSortArray(arr, mid+1, right); /// Pass from mid to end
-
         Merge(arr, left, mid, right); // Merge
     }
 }
@@ -112,7 +109,6 @@ int Partition(int arr[], int low, int high) {
         while (arr[i] <= pivot && i <= high - 1) {
             i++;
         }
-
         while (arr[j] > pivot && j >= low + 1) {
             j--;
         }
